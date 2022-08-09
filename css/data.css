@@ -1,5 +1,6 @@
-@import
-url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Gothic+A1&display=swap');
+
 
 *{
     padding: 0;
@@ -44,14 +45,16 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     flex-direction: column;
     width: 100%;
     height: 400%;
+    
 }
 .banner{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 30%;
+    
 }
-.top_banner{
+.top-banner{
     display:flex;
     flex-direction: row;
     order: 1;
@@ -62,40 +65,74 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background: #002B40;
     border-radius: 0px;
 }
-.text__top_banner{
+.text_top-banner{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
+    margin-left: 5%;
+    z-index: 3;
 }
-.img__top-right_banner{
+
+.h1{
+    color: #ffffff;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 69px;
+    line-height: 72px;
+}
+.h2{
+    color: #72BF00;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 69px;
+    line-height: 72px;
+}
+.h3{
+
+    color: #ffffff;
+    font-family: 'Amiri';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 72px;
+    
+   
+    
+}
+.img_top-right-banner{
     display: flex;
     justify-content: flex-end;
     width: 50%;
     margin-top: 5%;
-    overflow: visible;
+    object-fit: scale-down;
     z-index: 2;
  }
- .img__top-right_banner img{
+ .img_top-right-banner img{
     height: 175%;
-    width: auto;
+    width: 100%;
     object-fit: cover;
  }
  @media (max-widht:768px){
-    .top_banner{
+    .img_top-right-banner{
         flex-direction: column;
     }
-    .img__top-right_banner{
-        height: 0;
-        width: 0;
+    .img_top-right-banner{
+        max-height: 0;
+        max-width: 0;
     }
-    .img__top-right_banner img{
-        height: 0;
-        width: 0;
+    .img_top-right-banner img{
+        max-height: 0;
+        max-width: 0;
     }
 
  }
-.bottom_banner{
+.bottom-banner{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     order: 2;
     width: 100%;
     height: 30%;
@@ -103,4 +140,45 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background: #032736;
     border-radius: 0px;
     z-index: 1;
+}
+
+.left_bottom-banner{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left_bottom-banner img{
+    display: flex;
+    order: 1;
+    height: 17px;
+    width: 117px;
+}
+.left_bottom-banner div{
+    display: flex;
+    order: 2;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    margin-top: 10px;
+    color: #FFFFFF;
+
+}
+.center_bottom-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.right_bottom-banner {
+    display: flex;
+    
 }
