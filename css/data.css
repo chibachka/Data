@@ -79,6 +79,20 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     width: auto;
     object-fit: cover;
  }
+ @media (max-widht:768px){
+    .top_banner{
+        flex-direction: column;
+    }
+    .img__top-right_banner{
+        height: 0;
+        width: 0;
+    }
+    .img__top-right_banner img{
+        height: 0;
+        width: 0;
+    }
+
+ }
 .bottom_banner{
     display: flex;
     flex-direction: row;
