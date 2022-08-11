@@ -59,17 +59,17 @@ main{
     margin: 0px auto;
     padding: 15px;
 }
-@media(max-widht: 1087){
+@media(max-width: 1087){
     [class*="__container"]{
         max-width: 970px;
     }
 }
-@media(max-widht: 991.98){
+@media(max-width: 991.98){
     [class*="__container"]{
         max-width: 750px;
     }
 }
-@media(max-widht: 767.98){
+@media(max-width: 767.98){
     [class*="__container"]{
         max-width: none;
     }
@@ -100,7 +100,7 @@ main{
     display: flex;
     gap: 40px;
 }
-@media(max-widht: 991.98){
+@media(max-width: 991.98){
     .menu__list {
         gap: 20px;
     }
@@ -121,7 +121,7 @@ main{
     display: flex;
     justify-content: flex-end;
 }
-@media(max-widht: 991.98){
+@media(max-width: 991.98){
     .header__button{
         flex: 0 0 150px;
     }   
