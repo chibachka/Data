@@ -91,6 +91,13 @@ main{
     }
 }
 .header__logo {
+    display: flex;
+}
+@media(max-width: 767.98px){
+    .header__logo{
+        flex: 0 0 40px;
+        overflow: hidden;
+    }
 }
 .header_menu {
     flex: 1 1 auto;
@@ -100,7 +107,16 @@ main{
     justify-content: flex-end;
     padding-right: 40px;
 }
+@media(max-width: 767.98px){
+    .menu__body{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
 
+    }
+}
 .menu__list {
     display: flex;
     gap: 40px;
@@ -145,6 +161,10 @@ main{
     background-color: #EC5863;
     border-radius: 5px;
     transition: background-color 0.3s ease 0s;
+}@media(max-width: 767.98px){
+    .header__button .button{
+        padding: 14px 20px; 
+    }
 }
 
 
