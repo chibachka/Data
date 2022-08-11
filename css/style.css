@@ -99,6 +99,12 @@ main{
         overflow: hidden;
     }
 }
+@media(max-width: 479.98px){
+    .header__logo{
+        flex: 0 0 40px;
+        overflow: hidden;
+    }
+}
 .header_menu {
     flex: 1 1 auto;
 }
@@ -114,7 +120,19 @@ main{
         width: 100%;
         left: 0;
         top: 0;
-
+        background-color: #EC5863;
+        padding: 80px 15px 30px 15px;
+    }
+    .menu__link{
+        background-color: #ffffff;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .menu__list{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
     }
 }
 .menu__list {
