@@ -39,6 +39,8 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 
+/*-------------------------*/
+
 body{
     font-family: 'Rubik';
     font-size: 12px;
@@ -89,7 +91,6 @@ main{
     position: relative;
     z-index: 5;
 }
-
 @media(max-width: 430px){
     .header__logo{
         flex: 0 0 50px;
@@ -103,9 +104,8 @@ main{
     display: flex;
     justify-content: flex-end;
     padding-right: 40px;
+    z-index: 5;
 }
-
-
 .menu__list {
     display: flex;
     gap: 40px;
@@ -115,8 +115,6 @@ main{
         gap: 30px;
     }
 
-}
-.menu__item {
 }
 .menu__link {
     font-family: 'Raleway';
@@ -159,14 +157,13 @@ main{
         padding: 14px 20px; 
     }
 }
-
-
 .button:hover{
     background-color: #ea6f77;
     
 }
 .button-blue {
     background-color: #4285F4;
+    z-index: 3;
 }
 .button-blue:hover{
     background-color: #75a7f7;
@@ -230,6 +227,7 @@ main{
         justify-content: space-between;
         flex-direction: column;
         margin-left: 20px;
+        z-index: 5;
     }
     .icon-menu:before{
         content: "";
@@ -278,5 +276,153 @@ main{
     .header:target .close-icon-menu{
         display:flex;
         z-index: 10;
+    }
+}
+
+/*-------------------------*/
+
+.get-started {
+    background: #FAFBFD;
+   
+}
+.get-started__container {
+    padding: 153px 15px 48px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.get-started__container::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    right: 267px;
+    top: 0;
+    background-color: #EC5863;
+    border-radius: 30px 0px 0px 30px;
+    transform: translate(100%, 0px);
+    z-index: 1;
+}
+
+.get-started__content {
+    display: flex;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.get_started__block-text {
+    flex: 1 1 48%;
+    max-width: 410px;
+}
+
+.block-text__title {
+    font-family: 'Rubik';
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 126%;
+    color: #000;
+}
+.block-text__title:not(:last-child){
+    margin: 0px 0px 12px 0;
+}
+.block-text__title span{
+    color: #EC5863;;
+}
+.block-text__title_blue span {
+    color: #4285F4;
+}
+.block-text__text {
+    font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 138.5%;
+    letter-spacing: 0.08em;
+    color: #616161;
+}
+.block-text__text:not(:last-child){
+    margin: 0 0 24px 0;
+}
+
+.get-started__video {
+    display: flex;
+    flex: 1 1 100%;
+    padding: 0 0 0 20px;
+    flex-direction: row;
+
+}
+.video-get-started {
+    display: inline-flex;
+    margin: 20px 0 0 0;
+    
+}
+.video-get-started__icon {
+    flex: 0 0 44px;
+}
+.video-get-started__body {
+    padding: 0 0 0 12px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.video-get-started__title {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 126%;
+    letter-spacing: 0.08em;
+    color: #B0B0B0;
+}
+.video-get-started__text {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 126%;
+    letter-spacing: 0.165em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.get-started__image {
+    flex: 0 1 52%;
+    position: relative;
+    z-index: 2;
+}
+.get-started__image img{
+    max-width: 100%;
+    flex: 0 1 100%;
+}
+@media(max-width: 991.98px){
+    .get-started__container::before{
+        right: 185px;
+        border-radius: 20px 0px 0px 20px;
+    }
+}
+@media(max-width: 767.98px){
+    .get-started__container::before{
+        display: none;
+    }
+    .get_started__block-text {
+        max-width: none;
+        
+    }
+    .get-started__content {
+        flex: 1 1 100%;
+        padding: 0;
+    }
+    .get-started__container{
+       padding: 70px 15px 30px 15px;
+    }
+    .get-started__image{
+        flex: 1 1 100%;
+        text-align: center;
+        padding: 30px 0px;
+    }
+    .get-started__video{
+        padding: 0;
+
+    }
+    .video-get-started {
+        margin: 0;
+    }
+    .block-text__title{
+        font-size: 34px;
     }
 }
