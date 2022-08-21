@@ -788,6 +788,7 @@ main{
 @media(max-width:500px){
     .footer__items{
         flex-direction: column;
+        gap:20px;
     }
     .footer{
         padding: 30px 0;
